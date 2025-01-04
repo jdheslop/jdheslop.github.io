@@ -1,0 +1,95 @@
+<!-- Assisted by ChatGPT, an AI language model by OpenAI. -->
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carsten's Cube</title>
+    <meta name="description"
+        content="Carsten's Cube ist ein Strategiespiel, bei dem die Spieler abwechselnd Formen auf das Spielfeld legen, während sie versuchen, eine Reihe, Spalte oder Diagonale zu bilden, die entweder alle gleich oder alle unterschiedlich sind.">
+    <meta name="author" content="Jackson Heslop">
+    <meta property="og:title" content="Carsten's Cube">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://thekleiderschrank.com/fun/carsten/images/logo.jpg">
+    <meta property="og:url" content="https://thekleiderschrank.com/fun/carsten/carsten_DE.html">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/style.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RG35ECW3ZT"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-RG35ECW3ZT');
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>Carsten's Cube</h1>
+    </header>
+    <main>
+        <div class="playing-field">
+            <div class="cell" id="cell-1"></div>
+            <div class="cell" id="cell-2"></div>
+            <div class="cell" id="cell-3"></div>
+            <div class="cell" id="cell-4"></div>
+            <div class="cell" id="cell-5"></div>
+            <div class="cell" id="cell-6"></div>
+            <div class="cell" id="cell-7"></div>
+            <div class="cell" id="cell-8"></div>
+            <div class="cell" id="cell-9"></div>
+            <div class="cell" id="cell-10"></div>
+            <div class="cell" id="cell-11"></div>
+            <div class="cell" id="cell-12"></div>
+            <div class="cell" id="cell-13"></div>
+            <div class="cell" id="cell-14"></div>
+            <div class="cell" id="cell-15"></div>
+            <div class="cell" id="cell-16"></div>
+        </div>
+        <div class="info-window">
+            <p id="info-text">Willkommen zu Carsten's Cube!<br>Spieler 1: Bitte wähle deine erste Form aus.</p>
+            <span class="info-icon" id="info-icon">ℹ️</span>
+        </div>
+        <div class="staging-area">
+            <div class="staging-cell blue square" id="blue-1"></div>
+            <div class="staging-cell green triangle" id="green-1"></div>
+            <div class="staging-cell red circle" id="red-1"></div>
+            <div class="staging-cell yellow star" id="yellow-1"></div>
+            <div class="staging-cell blue square" id="blue-2"></div>
+            <div class="staging-cell green triangle" id="green-2"></div>
+            <div class="staging-cell red circle" id="red-2"></div>
+            <div class="staging-cell yellow star" id="yellow-2"></div>
+            <div class="staging-cell blue square" id="blue-3"></div>
+            <div class="staging-cell green triangle" id="green-3"></div>
+            <div class="staging-cell red circle" id="red-3"></div>
+            <div class="staging-cell yellow star" id="yellow-3"></div>
+            <div class="staging-cell blue square" id="blue-4"></div>
+            <div class="staging-cell green triangle" id="green-4"></div>
+            <div class="staging-cell red circle" id="red-4"></div>
+            <div class="staging-cell yellow star" id="yellow-4"></div>
+        </div>
+
+    </main>
+    <footer>
+        <a class="ksLink" href="https://thekleiderschrank.com/home_DE.html">Home: The Kleider Schrank</a>
+        <a href="carsten_EN.html"><img src="images/usa.png" alt="Flag to change languages" class="language-flag"></a>
+    </footer>
+    <div id="overlay" class="overlay">
+        <div class="overlay-content">
+            <span id="close-overlay" class="close">&times;</span>
+            <h2>Willkommen zu Carsten's Cube!</h2>
+            <h4>Spielregeln</h4>
+            <p>Carsten's Cube ist ein strategisches Spiel für zwei Spieler. Die Spieler wählen abwechselnd Formen aus
+                und platzieren sie auf dem Spielfeld. Das Ziel ist es, eine Reihe, Spalte oder Diagonale aus vier Formen
+                zu bilden, die entweder alle gleich oder alle unterschiedlich sind. Der erste Spieler, der eine
+                vollständige Reihe, Spalte oder Diagonale mit den angegebenen Kriterien bildet, gewinnt!</p>
+            <p>Um diese Regeln erneut zu sehen, klicke einfach auf das Infosymbol.</p>
+        </div>
+    </div>
+    <script src="scripts/script_DE.js"></script>
+</body>
+
+</html>

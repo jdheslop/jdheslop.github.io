@@ -1,0 +1,104 @@
+<!-- Assisted by ChatGPT, an AI language model by OpenAI -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Hangman - JD Games</title>
+    <meta name="description" content="Enjoy playing the classic Hangman game online.">
+    <meta name="author" content="Jackson Heslop">
+    <meta property="og:title" content="Hangman">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://thekleiderschrank.com/fun/hangman/images/logo.png">
+
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Hangman</h1>
+    </header>
+
+    <!-- Temporary start form -->
+    <section id="start-form">
+        <form>
+            <label for="target-word">Enter the target word or phrase:</label>
+            <input type="text" id="target-word" size="500" required>
+            <button type="button" onclick="startGame()">Start Playing</button>
+        </form>
+        <p id="start-form-error"></p>
+        <img class="hangmanImage" src="images/logo.png" alt="Hangman Logo">
+    </section>
+
+    <!-- Main game sections -->
+    <section id="game-area" style="display: none;">
+        <div id="target-word-container">
+            <h3 id="target-word-header">Target Word</h3>
+            <p id="target-word-display">_ _ _ _</p>
+        </div>
+
+        <div id="info-window">
+            <p id="info-text">Welcome to Hangman!<br>Please guess your first letter.</p>
+            <span class="info-icon" id="info-icon" onclick="showRules()">ℹ️</span>
+        </div>
+
+        <div id="letter-input">
+            <div>
+                <label for="guess-letter">Enter a letter:</label>
+                <input type="text" id="guess-letter" maxlength="1" size="10" pattern=".{1}">
+            </div>
+            <div id="guessButtons">
+                <button onclick="showSolvePuzzle()">Solve</button>
+                <button onclick="guessLetter()">Guess</button>
+            </div>
+            <p id="letter-input-error"></p>
+        </div>
+
+        <div id="solve-puzzle-div" style="display: none;">
+            <div>
+                <p>Enter your solution:</p>
+                <input type="text" id="solve-puzzle-input" size="500">
+            </div>
+            <div id="solveButtons">
+                <button onclick="showGuessLetter()">Go Back</button>
+                <button onclick="solvePuzzle()">Solve</button>
+            </div>
+        </div>
+
+        <!-- Reset Button -->
+        <button id="reset-button" onclick="resetGame()" style="display: none;">Play Again</button>
+
+        <div id="hangman-drawing">
+            <canvas id="hangman-canvas" width="200" height="200"></canvas>
+        </div>
+
+        <div id="guessed-letters">
+            <h3>Guessed Letters</h3>
+            <p id="guessed-letters-display"></p>
+        </div>
+
+    </section>
+
+    <footer>
+        <a class="ksLink" href="https://thekleiderschrank.com/index.html">Home: The Kleider Schrank</a>
+        <a href="hangman_DE.html"><img class="language-flag" src="images/german.png" alt="Flag to change languages"></a>
+    </footer>
+
+    <div id="rules-overlay" style="display: none;">
+        <div id="rules-content">
+            <span id="close-rules" style="cursor: pointer;">&times;</span> <!-- Close button -->
+            <h2>Game Rules</h2>
+            <p>1. Enter a word or phrase.</p>
+            <p>2. Guess letters one at a time.</p>
+            <p>3. You can attempt to solve the puzzle at any time.</p>
+            <p>4. Each incorrect guess adds a part to the hangman drawing.</p>
+            <p>5. The game ends when the puzzle is solved or the hangman is complete.</p>
+        </div>
+    </div>
+
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>

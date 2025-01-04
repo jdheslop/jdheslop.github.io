@@ -1,0 +1,113 @@
+<!-- Assisted by ChatGPT, an AI language model by OpenAI -->
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Galgenmännchen - The Kleider Schrank</title>
+    <meta name="description" content="Genieße das klassische Hangman-Spiel online.">
+    <meta name="author" content="Jackson Heslop">
+    <meta property="og:title" content="Galgenmännchen">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://thekleiderschrank.com/fun/hangman/images/logo.png">
+    <meta property="og:url" content="https://thekleiderschrank.com/fun/hangman/hangman_EN.html">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/style.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RG35ECW3ZT"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-RG35ECW3ZT');
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>Galgenmännchen</h1>
+    </header>
+
+    <!-- Temporary start form -->
+    <section id="start-form">
+        <form>
+            <label for="target-word">Gib das gesuchte Wort oder den gesuchten Satz ein:</label>
+            <input type="text" id="target-word" size="500" required>
+            <button type="button" onclick="startGame()">Spiel Starten</button>
+        </form>
+        <p id="start-form-error"></p>
+        <img class="hangmanImage" src="images/logo.png" alt="Hangman Logo">
+    </section>
+
+    <!-- Main game sections -->
+    <section id="game-area" style="display: none;">
+        <div id="target-word-container">
+            <h3 id="target-word-header">Gesuchtes Wort</h3>
+            <p id="target-word-display">_ _ _ _</p>
+        </div>
+
+        <div id="info-window">
+            <p id="info-text">Willkommen bei Hangman!<br> Bitte rate deinen ersten Buchstaben.</p>
+            <span class="info-icon" id="info-icon" onclick="showRules()">ℹ️</span>
+        </div>
+
+        <div id="letter-input">
+            <div>
+                <label for="guess-letter">Gib einen Buchstaben ein:</label>
+                <input type="text" id="guess-letter" maxlength="1" size="10" pattern=".{1}">
+            </div>
+            <div id="guessButtons">
+                <button onclick="showSolvePuzzle()">Lösen</button>
+                <button onclick="guessLetter()">Eingeben</button>
+            </div>
+            <p id="letter-input-error"></p>
+        </div>
+
+        <div id="solve-puzzle-div" style="display: none;">
+            <div>
+                <p>Gib deine Lösung ein:</p>
+                <input type="text" id="solve-puzzle-input" size="500">
+            </div>
+            <div id="solveButtons">
+                <button onclick="showGuessLetter()">Zurück</button>
+                <button onclick="solvePuzzle()">Lösen</button>
+            </div>
+        </div>
+
+        <!-- Reset Button -->
+        <button id="reset-button" onclick="resetGame()" style="display: none;">Nochmal spielen</button>
+
+        <div id="hangman-drawing">
+            <canvas id="hangman-canvas" width="200" height="200"></canvas>
+        </div>
+
+        <div id="guessed-letters">
+            <h3>Geratene Buchstaben</h3>
+            <p id="guessed-letters-display"></p>
+        </div>
+
+    </section>
+
+    <footer>
+        <a class="ksLink" href="https://thekleiderschrank.com/home_DE.html">Home: The Kleider Schrank</a>
+        <a href="hangman_EN.html"><img class="language-flag" src="images/usa.png" alt="Flag to change languages"></a>
+    </footer>
+
+    <div id="rules-overlay" style="display: none;">
+        <div id="rules-content">
+            <span id="close-rules" style="cursor: pointer;">&times;</span> <!-- Close button -->
+            <h2>Spielregeln:</h2>
+            <p>1. Gib ein Wort oder einen Satz ein.</p>
+            <p>2. Rate Buchstaben nacheinander.</p>
+            <p>3. Du kannst jederzeit versuchen, das Rätsel zu lösen.</p>
+            <p>4. Jeder falsche Buchstabe fügt dem Hangman eine Zeichnung hinzu.</p>
+            <p>5. Das Spiel endet, wenn das Rätsel gelöst ist oder der Hangman vollständig ist.</p>
+        </div>
+    </div>
+
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JD Games</title>
+    <meta name="description"
+        content="Diese Website hat Spiele, um meine Familie und Freunde glücklich zu machen. Ich hoffe, dass du auch Spaß hast.">
+
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+    <div id="content">
+        <header>
+            <div id="heroBox">
+                <a class="logoLink" href="index.html">
+                    <img class="logo" src="images/logo.png" alt="The Kleider Schrank Logo">
+                </a>
+                <div class="headerMsg">
+                    <h2>JD Games</h2>
+                </div>
+                <div class="dropdownBox">
+                    <div class="dropdown">
+                        <button onclick="dropDown()" class="dropdownButton">
+                            <img class="worldImage" src="images/world.jpg" alt="">
+                        </button>
+                        <div id="langDropdown" class="langDropdownContent">
+                            <a class="languageLink" href="home_DE.html">
+                                <img class="languageImage" src="images/german.png" alt="">
+                            </a>
+                            <a class="languageLink" href="index.html">
+                                <img class="languageImage" src="images/usa.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="stickIt">
+                <nav>
+                    <a href="carsten/carsten_DE.html">Carsten's Cube</a>
+                    <a href="hangman/hangman_DE.html">Galgenmännchen</a>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <div id="intro">
+                <h1>JD Games</h1>
+                <p class="introMinorHeader">Diese Website ist etwas, das ich entwickelt habe, um meine Familie und
+                    Freunde glücklich zu machen. Ich hoffe, dass du auch Spaß damit hast.</p>
+            </div>
+
+            <div id="gamesGrid">
+
+                <div class="game">
+                    <a class="game1" href="carsten/carsten_DE.html"><img class="gameImage"
+                            src="carsten/images/small-logo.jpg" alt="Image of Carsten's Cube"></a>
+                    <p class="game2">Carsten's Cube ist ein Strategiespiel, bei dem die Spieler abwechselnd Formen auf
+                        das Spielfeld
+                        legen, während sie versuchen, eine Reihe, Spalte oder Diagonale zu bilden, die entweder alle
+                        gleich oder alle unterschiedlich sind.</p>
+                    <div class="game3">
+                        <a href="carsten/carsten_DE.html">
+                            <h3 class="gameButton">Carsten's Cube</h3>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="game">
+                    <a class="game1" href="hangman/hangman_DE.html"><img class="gameImage" src="hangman/images/logo.png"
+                            alt="Image of Hangman"></a>
+                    <p class="game2">Galgenmännchen ist eine fantastische Möglichkeit, deinen Sinn zu schärfen, deinen
+                        Wortschatz zu
+                        erweitern und eine tolle Zeit mit Freunden und Familie zu haben.</p>
+                    <div class="game3">
+                        <a href="hangman/hangman_DE.html">
+                            <h3 class="gameButton">Galgenmännchen</h3>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </main>
+
+        <footer>
+            <div class="footerText">
+                <p>JD Games</p>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>

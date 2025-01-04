@@ -1,0 +1,95 @@
+<!-- Assisted by ChatGPT, an AI language model by OpenAI. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carsten's Cube - The Kleider Schrank</title>
+    <meta name="description"
+        content="Carsten's Cube is a strategy game where players take turns placing shapes on the playing field while trying to form a row, column, or diagonal that are either all the same or all different.">
+    <meta name="author" content="Jackson Heslop">
+    <meta property="og:title" content="Carsten's Cube">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://thekleiderschrank.com/fun/carsten/images/logo.jpg">
+    <meta property="og:url" content="https://thekleiderschrank.com/fun/carsten/carsten_EN.html">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/style.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RG35ECW3ZT"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-RG35ECW3ZT');
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>Carsten's Cube</h1>
+    </header>
+    <main>
+        <div class="playing-field">
+            <div class="cell" id="cell-1"></div>
+            <div class="cell" id="cell-2"></div>
+            <div class="cell" id="cell-3"></div>
+            <div class="cell" id="cell-4"></div>
+            <div class="cell" id="cell-5"></div>
+            <div class="cell" id="cell-6"></div>
+            <div class="cell" id="cell-7"></div>
+            <div class="cell" id="cell-8"></div>
+            <div class="cell" id="cell-9"></div>
+            <div class="cell" id="cell-10"></div>
+            <div class="cell" id="cell-11"></div>
+            <div class="cell" id="cell-12"></div>
+            <div class="cell" id="cell-13"></div>
+            <div class="cell" id="cell-14"></div>
+            <div class="cell" id="cell-15"></div>
+            <div class="cell" id="cell-16"></div>
+        </div>
+        <div class="info-window">
+            <p id="info-text">Welcome to Carsten's Cube!<br>Player 1: Please select your first shape.</p>
+            <span class="info-icon" id="info-icon">ℹ️</span>
+        </div>
+        <div class="staging-area">
+            <div class="staging-cell blue square" id="blue-1"></div>
+            <div class="staging-cell green triangle" id="green-1"></div>
+            <div class="staging-cell red circle" id="red-1"></div>
+            <div class="staging-cell yellow star" id="yellow-1"></div>
+            <div class="staging-cell blue square" id="blue-2"></div>
+            <div class="staging-cell green triangle" id="green-2"></div>
+            <div class="staging-cell red circle" id="red-2"></div>
+            <div class="staging-cell yellow star" id="yellow-2"></div>
+            <div class="staging-cell blue square" id="blue-3"></div>
+            <div class="staging-cell green triangle" id="green-3"></div>
+            <div class="staging-cell red circle" id="red-3"></div>
+            <div class="staging-cell yellow star" id="yellow-3"></div>
+            <div class="staging-cell blue square" id="blue-4"></div>
+            <div class="staging-cell green triangle" id="green-4"></div>
+            <div class="staging-cell red circle" id="red-4"></div>
+            <div class="staging-cell yellow star" id="yellow-4"></div>
+        </div>
+
+    </main>
+    <footer>
+        <a class="ksLink" href="https://thekleiderschrank.com/home_EN.html">Home: The Kleider Schrank</a>
+        <a href="carsten_DE.html"><img src="images/german.png" alt="Flag to change languages" class="language-flag"></a>
+    </footer>
+    <div id="overlay" class="overlay">
+        <div class="overlay-content">
+            <span id="close-overlay" class="close">&times;</span>
+            <h2>Welcome to Carsten's Cube!</h2>
+            <h4>Game Rules</h4>
+            <p>Carsten's Cube is a strategic game for two players. The players take turns selecting shapes and placing
+                them on the playing field. The objective is to form a row, column, or diagonal
+                of four shapes that are either all the same or all different. The first player to form a complete row,
+                column, or diagonal with the specified criteria wins!</p>
+            <p>To see these rules again, simply click on the info symbol.</p>
+        </div>
+    </div>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>

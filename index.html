@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JD Games</title>
+    <meta name="description"
+        content="This website has games to help make my family and friends happy. I hope that you have fun too.">
+
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+    <div id="content">
+        <header>
+            <div id="heroBox">
+                <a class="logoLink" href="index.html">
+                    <img class="logo" src="images/logo.png" alt="The Kleider Schrank Logo">
+                </a>
+                <div class="headerMsg">
+                    <h2>JD Games</h2>
+                </div>
+                <div class="dropdownBox">
+                    <div class="dropdown">
+                        <button onclick="dropDown()" class="dropdownButton">
+                            <img class="worldImage" src="images/world.jpg" alt="">
+                        </button>
+                        <div id="langDropdown" class="langDropdownContent">
+                            <a class="languageLink" href="home_DE.html">
+                                <img class="languageImage" src="images/german.png" alt="">
+                            </a>
+                            <a class="languageLink" href="index.html">
+                                <img class="languageImage" src="images/usa.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="stickIt">
+                <nav>
+                    <a href="carsten/carsten_EN.html">Carsten's Cube</a>
+                    <a href="hangman/hangman_EN.html">Hangman</a>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <div id="intro">
+                <h1>JD Games</h1>
+                <p class="introMinorHeader">This website is something that I developed to help make my family
+                    and friends happy. I hope that you have fun with them too.</p>
+            </div>
+
+            <div id="gamesGrid">
+
+                <div class="game">
+                    <a class="game1" href="carsten/carsten_EN.html"><img class="gameImage"
+                            src="carsten/images/small-logo.jpg" alt="Image of Carsten's Cube"></a>
+                    <p class="game2">Carsten's Cube is a strategy game where players take turns placing shapes on the
+                        playing field
+                        while trying to form a row, column, or diagonal that are either all the same or all different.
+                    </p>
+                    <div class="game3">
+                        <a href="carsten/carsten_EN.html">
+                            <h3 class="gameButton">Carsten's Cube</h3>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="game">
+                    <a class="game1" href="hangman/hangman_EN.html"><img class="gameImage" src="hangman/images/logo.png"
+                            alt="Image of Hangman"></a>
+                    <p class="game2">Hangman is a fantastic way to sharpen your mind, expand your vocabulary, and have a
+                        great time
+                        with friends and family.</p>
+                    <div class="game3">
+                        <a href="hangman/hangman_EN.html">
+                            <h3 class="gameButton">Hangman</h3>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </main>
+
+        <footer>
+            <div class="footerText">
+                <p>JD Games</p>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
